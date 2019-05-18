@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PREREQUESITES - INSTALLATIONS
 
-Things you may want to cover:
+	- Install ruby with debkit 2.5.5-1 : https://rubyinstaller.org/downloads/
+	- When installing, be sure to have "Add Ruby executables to your PATH" checked
+	- Chose base installation (1)
 
-* Ruby version
+COMMANDS To Build and Run
 
-* System dependencies
+	- cd [app_location]
+	- gem install rails
+	- bundle install
+	- bundle update bundler (IF NEEDED)
+	- gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
+	- bundle update
 
-* Configuration
+	- rails server (run command)
 
-* Database creation
+COMMANDS to Test
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	- cd [app_location]
+	- rails test
