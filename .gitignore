@@ -12,14 +12,14 @@
 
 # bundler state
 /.bundle
-/vendor/bundle/
-/vendor/ruby/
-/lib/bundler/man/
+/vendor
 
 # minimal Rails specific artifacts
 db/*.sqlite3
-/log/*
-/tmp/*
+/log
+/tmp
+/lib
+/bin
 *.*~
 
 # various artifacts
