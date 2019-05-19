@@ -14,8 +14,10 @@ COMMANDS To Build and Run
 	- bundle update bundler (IF NEEDED)
 	- gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
 	- bundle update
+    - cd bin
+    - rails db:migrate RAILS_ENV=development
 
-	- rails server (run command)
+	- rails server (run command on project folder)
 
 COMMANDS to Test
 
