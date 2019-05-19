@@ -16,10 +16,10 @@
 
 # minimal Rails specific artifacts
 db/*.sqlite3
-/log
-/tmp
-/lib
-/bin
+log/
+tmp/
+lib/
+bin/
 *.*~
 
 # various artifacts
