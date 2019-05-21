@@ -13,7 +13,6 @@
 # bundler state
 /.bundle
 vendor/
-vendor/
 lib/
 
 # minimal Rails specific artifacts

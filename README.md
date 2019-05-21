@@ -1,25 +1,43 @@
-# README
+# Camel CI Ruby Test Project
 
-PREREQUESITES - INSTALLATIONS
+## Usage
 
-	- Install ruby with debkit 2.5.5-1 : https://rubyinstaller.org/downloads/
-	- When installing, be sure to have "Add Ruby executables to your PATH" checked
-	- Chose base installation (1)
+### Prerequisites
 
-COMMANDS To Build and Run
+You must have Ruby with debkit installed on your machine to use this project.
 
-	- cd [app_location]
-	- gem install rails
-	- bundle install
-	- bundle update bundler (IF NEEDED)
-	- gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
-	- bundle update
-    - cd bin
-    - rails db:migrate RAILS_ENV=development
+You can check if you already have it installed with the command: `mvn -v`.
 
-	- rails server (run command on project folder)
+Otherwise, you can get it with those steps:
 
-COMMANDS to Test
+- Download the ruby with debkit 2.5.5-1 installer [here](hhttps://rubyinstaller.org/downloads/)
+- Run it and make sure to have "Add Ruby executables to your PATH" checked
+- When installing MSYS2, Install all 3 steps (1, 2 & 3)
 
-	- cd [app_location]
-	- rails test
+### Installing dependencies
+
+```bash
+gem install bundler
+gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
+```
+
+### Building/Rebuilding the project
+
+```bash
+bundle install
+rake app:update:bin
+rails db:migrate RAILS_ENV=development
+bundle update
+```
+
+### Running Tests
+
+```bash
+rails test
+```
+
+### Running the application
+
+```bash
+rails server
+```
