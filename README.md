@@ -6,7 +6,7 @@
 
 You must have Ruby with debkit installed on your machine to use this project.
 
-You can check if you already have it installed with the command: `mvn -v`.
+You can check if you already have it installed with the command: `gem -v`.
 
 Otherwise, you can get it with those steps:
 
