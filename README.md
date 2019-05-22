@@ -26,18 +26,20 @@ gem install sqlite3 -v '1.4.1' --source 'https://rubygems.org/'
 ```bash
 bundle install
 rake app:update:bin
-rails db:migrate RAILS_ENV=development
-bundle update
 ```
 
 ### Running Tests
 
 ```bash
+rails db:migrate RAILS_ENV=test
+bundle update
 rails test
 ```
 
 ### Running the application
 
 ```bash
+rails db:migrate RAILS_ENV=development
+bundle update
 rails server
 ```
