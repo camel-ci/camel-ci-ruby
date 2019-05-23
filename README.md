@@ -10,7 +10,7 @@ You can check if you already have it installed with the command: `gem -v`.
 
 Otherwise, you can get it with those steps:
 
-- Download the ruby with debkit 2.5.5-1 installer [here](hhttps://rubyinstaller.org/downloads/)
+- Download the ruby with debkit 2.5.5-1 installer [here](https://rubyinstaller.org/downloads/)
 - Run it and make sure to have "Add Ruby executables to your PATH" checked
 - When installing MSYS2, Install all 3 steps (1, 2 & 3)
 
